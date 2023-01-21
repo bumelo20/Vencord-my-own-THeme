@@ -1,0 +1,158 @@
+/* Add your own Custom CSS here.
+Have a theme you want to use? Copy and paste the contents here.
+You need to restart (click the restart button) after changing. */
+
+/* Add your own Custom CSS here.
+Have a theme you want to use? Copy and paste the contents here.
+You need to restart (click the restart button) after changing. */
+@import url('https://blobdash.ml/crystalline.css');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    /* background: black; */
+    background: url(https://www.bumelo.cf/i/wbzb8.jpg);
+    background-position: 100% 0%;
+    background-size: auto 100%;
+    backdrop-filter: brightness(20%);
+}
+
+/* hide discord asking for money every two seconds */
+
+.channelNotice-tO6Tus {
+    display:none;
+}
+
+/* transparency wizardry fixes */
+
+.container-2cd8Mz {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.panels-3wFtMD {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.chatContent-3KubbW {
+    --channeltextarea-background: rgba(0, 0, 0, 0) !important;
+}
+
+/* hide tab focus layer */
+
+div{
+    --focus-primary: transparent !important;
+}
+
+/* fonts */
+body, div, span, textarea, ::-webkit-input-placeholder { 
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* hide blocked messages */
+
+div[class^="container-"]{
+    min-height: 0;
+}
+
+div[class^="blockedSystemMessage-"], div[class*="blockedSystemMessage-"] {
+    display: none; 
+}
+
+div[class^="groupStart-"], div[class^="da-groupStart"] {
+    display: none;
+}
+
+/* hide rank icon */
+
+img[class^="roleIcon-"] {
+    display:none;
+}
+
+/* rainbow stuff */
+
+.colorLink-2apWfY {
+        animation: rainbow 2.5s linear;
+        animation-iteration-count: infinite;
+}
+
+.mentioned-Tre-dv, .mention {
+        animation: rainbow-bg 2.5s linear;
+        animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg{
+        100%,0%{
+            background-color: rgba(255,0,0,0.1);
+        }
+        8%{
+            background-color: rgba(255,127,0,0.1);
+        }
+        16%{
+            background-color: rgba(255,255,0,0.1);
+        }
+        25%{
+            background-color: rgba(127,255,0,0.1);
+        }
+        33%{
+            background-color: rgba(0,255,0,0.1);
+        }
+        41%{
+            background-color: rgba(0,255,127,0.1);
+        }
+        50%{
+            background-color: rgba(0,255,255,0.1);
+        }
+        58%{
+            background-color: rgba(0,127,255,0.1);
+        }
+        66%{
+            background-color: rgba(0,0,255,0.1);
+        }
+        75%{
+            background-color: rgba(127,0,255,0.1);
+        }
+        83%{
+            background-color: rgba(255,0,255,0.1);
+        }
+        91%{
+            background-color: rgba(255,0,127,0.1);
+        }
+}
+
+@keyframes rainbow{
+        100%,0%{
+            color: rgb(255,0,0);
+        }
+        8%{
+            color: rgb(255,127,0);
+        }
+        16%{
+            color: rgb(255,255,0);
+        }
+        25%{
+            color: rgb(127,255,0);
+        }
+        33%{
+            color: rgb(0,255,0);
+        }
+        41%{
+            color: rgb(0,255,127);
+        }
+        50%{
+            color: rgb(0,255,255);
+        }
+        58%{
+            color: rgb(0,127,255);
+        }
+        66%{
+            color: rgb(0,0,255);
+        }
+        75%{
+            color: rgb(127,0,255);
+        }
+        83%{
+            color: rgb(255,0,255);
+        }
+        91%{
+            color: rgb(255,0,127);
+        }
+}
